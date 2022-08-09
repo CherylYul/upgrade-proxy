@@ -9,4 +9,8 @@ contract Box {
         value = _newValue;
         emit ValueChange(_newValue);
     }
+
+    function retreive() public view returns (uint256) {
+        return value;
+    }
 }
